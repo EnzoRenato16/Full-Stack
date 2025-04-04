@@ -1,2 +1,1 @@
-# Full-Stack
-Aqui temos alguns projetos que fiz full stack atualizados
+# Full-Stack de Automação residencial
