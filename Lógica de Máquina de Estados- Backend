@@ -1,0 +1,18 @@
+npm install xstate
+const { createMachine, interpret } = require('xstate');
+
+// Exemplo de máquina de estados para luz
+const luzMachine = createMachine({
+  id: 'luz',
+  initial: 'off',
+  states: {
+    off: {
+      on: { LIGAR: 'on' }
+    },
+    on: {
+      on: { DESLIGAR: 'off' }
+    }
+  }
+});
+
+const luzService = interpret(luzMachine).start();
